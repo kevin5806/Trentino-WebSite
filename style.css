@@ -1,7 +1,13 @@
 @font-face {
     font-family: 'bakul-nasi';
-    src: url(BakulNasi.otf);
+    src: url(font/BakulNasi.otf);
     font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(font/Montserrat-VariableFont_wght.ttf);
+    font-weight: 400;
 }
 
 body {
@@ -9,6 +15,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
+  margin: 0 0 0 0;
 }
 
 h1 {
@@ -31,16 +38,26 @@ h1 {
     padding: 0 10px 0 10px;
 }
 
+#titolo {
+    font-size: 3rem;
+}
+
+#testo {
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6em;
+}
+
 .parent {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    margin: 20px 40px 0 40px;
+
 }
 
 .child {
     border: solid white;
-    margin-top: 30px;
-    margin-left: 50px;
-    margin-right: 50px;
-    height: 300px;
+    margin: 10px 10px 10px 10px;
 }
 
 .child > img {
